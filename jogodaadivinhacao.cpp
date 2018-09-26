@@ -8,5 +8,10 @@ int main()
     cout << "**************************************" << endl;
 
     int numero_secreto = 42;
-    cout << "O número secreto é: " << numero_secreto << ". Não conte para ninguém!" << endl;
+
+    int chute;
+    cout << "Qual seu chute? ";
+    cin >> chute;
+
+    cout << "O valor do seu chute é: " << chute << endl;
 }
