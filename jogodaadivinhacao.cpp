@@ -10,12 +10,12 @@ int main()
     const int NUMERO_SECRETO = 42;
 
     bool nao_acertou = true;
+    int numero_de_tentativas = 5;
     int tentativas = 0;
 
     double pontos = 1000.0;
 
-    while(nao_acertou){
-        tentativas++;
+    for(tentativas = 1;tentativas <= numero_de_tentativas;tentativas++){
         int chute;
         cout << "Tentativa " << tentativas << endl;
         cout << "Qual seu chute? ";
@@ -32,6 +32,7 @@ int main()
         {
             cout << "Parabéns! Você acertou o número secreto!" << endl;
             nao_acertou = false;
+            break;
         }
         else if (maior)
         {
@@ -42,9 +43,15 @@ int main()
             cout << "Seu chute foi menor que o número secreto!" << endl;
         }
     }
+
     cout << "Fim de jogo!" << endl;
-    cout << "Você acertou o número secreto em " << tentativas  << " tentativas" << endl;
-    cout.precision(2);
-    cout << fixed;
-    cout << "Sua pontuação foi de " << pontos << " pontos." << endl;
+    if(nao_acertou){
+        cout << "Você perdeu! Tente novamente!" << endl;
+    }
+    else{
+        cout << "Você acertou o número secreto em " << tentativas << " tentativas" << endl;
+        cout.precision(2);
+        cout << fixed;
+        cout << "Sua pontuação foi de " << pontos << " pontos." << endl;
+    }
 }
