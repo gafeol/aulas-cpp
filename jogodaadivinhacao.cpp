@@ -21,7 +21,7 @@ int main()
         cout << "Qual seu chute? ";
         cin >> chute;
 
-        double pontos_perdidos = (chute - NUMERO_SECRETO)/2;
+        double pontos_perdidos = abs(chute - NUMERO_SECRETO)/2.0;
         pontos -= pontos_perdidos;
 
         cout << "O valor do seu chute é: " << chute << endl;
