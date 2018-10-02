@@ -5,9 +5,13 @@ using namespace std;
 
 int main()
 {
-    cout << "**************************************" << endl;
-    cout << "* Bem-vindos ao jogo da adivinhação! *" << endl;
-    cout << "**************************************" << endl;
+    cout << "       P  /_\\  P                               " << endl;
+    cout << "      /_\\_|_|_/_\\                              " << endl;
+    cout << "  n_n | ||. .|| | n_n         Bem-vindos ao    " << endl;
+    cout << "  |_|_|nnnn nnnn|_|_|     Jogo da Adivinhação! " << endl;
+    cout << " |\" \"  |  |_|  |  \" \"|                         " << endl;
+    cout << " |_____| ' _ ' |_____|                         " << endl;
+    cout << "       \\__|_|__/                               " << endl;
 
     cout << "Escolha o seu nível de dificuldade:" << endl;
     cout << "Fácil (F), Médio (M) ou Difícil (D)" << endl;
@@ -67,11 +71,32 @@ int main()
     cout << "Fim de jogo!" << endl;
     if(nao_acertou){
         cout << "Você perdeu! Tente novamente!" << endl;
+        cout << endl << endl;
+        cout << " \\|/ ____ \\|/ " << endl;
+        cout << "  @~/ ,. \\~@  " << endl;
+        cout << " /_( \\__/ )_\\ " << endl;
+        cout << "    \\__U_/    " << endl;
     }
     else{
         cout << "Você acertou o número secreto em " << tentativas << " tentativas" << endl;
         cout.precision(2);
         cout << fixed;
         cout << "Sua pontuação foi de " << pontos << " pontos." << endl;
+        cout << endl << endl;
+        cout << "               OOOOOOOOOOO               " << endl;
+        cout << "           OOOOOOOOOOOOOOOOOOO           " << endl;
+        cout << "        OOOOOO  OOOOOOOOO  OOOOOO        " << endl;
+        cout << "      OOOOOO      OOOOO      OOOOOO      " << endl;
+        cout << "    OOOOOOOO  #   OOOOO  #   OOOOOOOO    " << endl;
+        cout << "   OOOOOOOOOO    OOOOOOO    OOOOOOOOOO   " << endl;
+        cout << "  OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO  " << endl;
+        cout << "  OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO  " << endl;
+        cout << "  OOOO  OOOOOOOOOOOOOOOOOOOOOOOOO  OOOO  " << endl;
+        cout << "   OOOO  OOOOOOOOOOOOOOOOOOOOOOO  OOOO   " << endl;
+        cout << "    OOOO   OOOOOOOOOOOOOOOOOOOO  OOOO    " << endl;
+        cout << "      OOOOO   OOOOOOOOOOOOOOO   OOOO     " << endl;
+        cout << "        OOOOOO   OOOOOOOOO   OOOOOO      " << endl;
+        cout << "           OOOOOO         OOOOOO         " << endl;
+        cout << "               OOOOOOOOOOOO              " << endl;
     }
 }
