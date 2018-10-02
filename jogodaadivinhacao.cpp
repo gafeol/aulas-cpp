@@ -7,10 +7,27 @@ int main()
     cout << "* Bem-vindos ao jogo da adivinhação! *" << endl;
     cout << "**************************************" << endl;
 
+    cout << "Escolha o seu nível de dificuldade:" << endl;
+    cout << "Fácil (F), Médio (M) ou Difícil (D)" << endl;
+
+    char dificuldade;
+    cin >> dificuldade;
+
+    int numero_de_tentativas;
+
+    if(dificuldade == 'F'){
+        numero_de_tentativas = 15;
+    }
+    else if(dificuldade == 'M'){
+        numero_de_tentativas = 10;
+    }
+    else {
+        numero_de_tentativas = 5;
+    }
+
     const int NUMERO_SECRETO = 42;
 
     bool nao_acertou = true;
-    int numero_de_tentativas = 5;
     int tentativas = 0;
 
     double pontos = 1000.0;
