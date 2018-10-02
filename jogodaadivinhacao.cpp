@@ -1,6 +1,6 @@
 #include <iostream>
-#include<cstdlib>
-#include<ctime>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 
 int main()
@@ -79,9 +79,11 @@ int main()
     }
     else{
         cout << "Você acertou o número secreto em " << tentativas << " tentativas" << endl;
+
         cout.precision(2);
         cout << fixed;
         cout << "Sua pontuação foi de " << pontos << " pontos." << endl;
+
         cout << endl << endl;
         cout << "               OOOOOOOOOOO               " << endl;
         cout << "           OOOOOOOOOOOOOOOOOOO           " << endl;
